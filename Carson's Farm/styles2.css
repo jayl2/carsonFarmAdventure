@@ -141,7 +141,8 @@ height: 400px;
     
 }
 
-#ant, #a-text{
+#ant, #a-text, #b-text, #c-text, 
+#d-text, #e-text{
     display:none;
 }
 
@@ -154,4 +155,11 @@ height: 400px;
     display:none;
 }
 
+#dog{
+    display:none;
+}
+
+#eel{
+    display:none;
+}
 
