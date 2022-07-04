@@ -4,6 +4,7 @@ const a = document.querySelector('#a')
 const b = document.querySelector('#b')
 const c = document.querySelector('#c')
 const ant = document.querySelector('#ant')
+const antInp = document.querySelector('#a-text')
 const bear = document.querySelector('#bear')
 const cat = document.querySelector('#cat')
 
@@ -15,13 +16,13 @@ document.querySelector('#gotit').addEventListener('click', function () {
 function ants() {
   a.addEventListener('click', handleClick)
   function handleClick() {
-    ant.style.display = 'block'
+    ;(ant.style.display = 'block') && (antInp.style.display = 'block')
   }
-
   ant.addEventListener('click', function () {
-    ant.style.display = 'none'
+    ;(ant.style.display = 'none') && (antInp.style.display = 'none')
   })
 }
+
 ants()
 
 //enable/disable bear image
@@ -46,3 +47,15 @@ function cats() {
 }
 
 cats()
+
+// answer correct to hide ant
+document.addEventListener('keydown', function (e) {
+  console.log(e)
+  if (e.key === 'Enter') {
+    antInp.value === 'ant'
+    console.log(antInp.value)
+    if (antInp.value === 'ant') {
+      ;(ant.style.display = 'none') && (antInp.style.display = 'none')
+    }
+  }
+})

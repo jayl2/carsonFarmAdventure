@@ -33,7 +33,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover ;
     margin: 5%;
-    background:;
+    
     
 }
 
@@ -64,6 +64,7 @@ button{
     cursor: pointer;
     border: solid #40e495;
     border-width: 5px;
+    border-radius: 10%;
 }
 
 button:hover{
@@ -116,10 +117,34 @@ height: 400px;
 .animal:hover{
     cursor: pointer;
 }
+::placeholder{
+    color:white;
+    opacity: 0.5;
+}
+.inputStyle{
+    width: 40%;
+    height: 50px;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    background-color: darkseagreen;
+    border: solid darkslategray;
+    border-width: 5px;
+    text-align:center;
+    font-family: 'titan one';
+    font-size: 2rem;
+    color: white;
+    
+}
 
-#ant{
+#ant, #a-text{
     display:none;
 }
+
 
 #bear{
     display:none;
