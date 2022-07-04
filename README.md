@@ -7,7 +7,7 @@ Children's Interactive flash card game.
 *HTML 5
 *Trello
 
-####**ScreenShot**
+###**ScreenShot**
 
 **Image 1**
 ![Image](https://i.imgur.com/hPf8SSY.png)
