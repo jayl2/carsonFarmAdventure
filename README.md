@@ -2,10 +2,10 @@
 Children's Interactive flash card game.
 
 ### ***Technologies Used***
-*Javascript
-*CSS 3
-*HTML 5
-*Trello
+*Javascript*
+*CSS 3*
+*HTML 5*
+*Trello*
 
 ###**ScreenShot**
 
