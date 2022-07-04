@@ -1,0 +1,48 @@
+html{
+    background-color: white;
+    background-image: url("images/farm.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    background-color: white;
+}   
+
+body{
+    margin: 3;
+}
+.title{
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10%;
+    color:rgb(32, 85, 41)
+}
+
+.start{
+    text-align: center;
+    background-color:darkseagreen;
+    padding: 25px;
+    border: 60px;
+    width: 20%;
+    margin:auto;
+    opacity: 0.8;
+    border: rgb(10, 105, 45);
+    border-style:dashed;
+    border-width: thick;
+    font-family: 'Titan One', cursive;
+    color:white;
+    border-radius: 15%;
+    
+}
+
+.start:hover{
+color: green;
+opacity:1;
+border: solid;
+}
+
+
+h1{
+    margin:1% 2% 2%;;
+}
+
