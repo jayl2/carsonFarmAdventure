@@ -1,0 +1,132 @@
+.title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Titan One';
+    margin-top:0;
+    margin-bottom: 55px;
+}
+
+
+.directions{
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    width: 30%;
+    bottom:30%;
+    background-color: rgba(143,188,143, .7);
+    text-align: center;
+    padding: 80px;
+    border: solid rgb(116, 184, 127);
+    border-width: 20px;
+    border-radius: 20px;
+    font-family: 'Titan One', cursive;
+    color: rgb(35, 137, 93);
+}
+
+body{
+    /* background: url('images/farm2.jpeg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/farm2.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    margin: 5%;
+    background:;
+    
+}
+
+#gotit{
+    font-family: 'Titan One', cursive;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button{
+    font-family: 'Titan One', cursive;
+    background-color: rgba(116, 184, 127, .8);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: solid #40e495;
+    border-width: 5px;
+}
+
+button:hover{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 1;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.letter-buttons{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    row-gap: 90px;
+    column-gap: 100px;    
+}
+
+
+/* .anipic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.animal{
+display: block;
+left: 0;
+right: 0;
+margin-left:auto;
+margin-right: auto;
+position:absolute;
+width: 40%;
+bottom: 30%;
+border: solid rgb(39, 69, 39);
+border-width: 10px;
+border-radius: 30%;
+height: 400px;
+}
+
+.animal:hover{
+    cursor: pointer;
+}
+
+#ant{
+    display:none;
+}
+
+#bear{
+    display:none;
+}
+
+#cat{
+    display:none;
+}
+
+
