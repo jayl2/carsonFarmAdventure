@@ -142,7 +142,9 @@ height: 400px;
 }
 
 #ant, #a-text, #b-text, #c-text, 
-#d-text, #e-text{
+#d-text, #e-text, #f-text, #s-text,#g-text,#h-text,#i-text,
+#j-text,#k-text,#l-text,#m-text,#n-text,#o-text,#p-text,#q-text,#r-text,#t-text,
+#u-text,#v-text,#w-text,#x-text,#y-text,#z-text{
     display:none;
 }
 
@@ -162,4 +164,11 @@ height: 400px;
 #eel{
     display:none;
 }
+
+#snake, #fish, #goat, #horse, #iguana, #jaguar,
+#koala, #lion, #monkey, #newt, #octopus, #panther,
+#quail, #rabbit, #tiger, #unicorn, #viper, #walrus, #xerus, #yak, #zebra{
+    display:none;
+}
+
 
