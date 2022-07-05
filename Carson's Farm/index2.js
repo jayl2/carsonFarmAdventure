@@ -289,6 +289,94 @@ function quails() {
   })
 }
 quails()
+
+function rabbits() {
+  r.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(rabbit.style.display = 'block') && (rabbitInp.style.display = 'block')
+  }
+  rabbit.addEventListener('click', function () {
+    ;(rabbit.style.display = 'none') && (rabbitInp.style.display = 'none')
+  })
+}
+rabbits()
+
+function tigers() {
+  t.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(tiger.style.display = 'block') && (tigerInp.style.display = 'block')
+  }
+  tiger.addEventListener('click', function () {
+    ;(tiger.style.display = 'none') && (tigerInp.style.display = 'none')
+  })
+}
+tigers()
+
+function unicorns() {
+  u.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(unicorn.style.display = 'block') && (unicornInp.style.display = 'block')
+  }
+  unicorn.addEventListener('click', function () {
+    ;(unicorn.style.display = 'none') && (unicornInp.style.display = 'none')
+  })
+}
+unicorns()
+
+function vipers() {
+  v.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(viper.style.display = 'block') && (viperInp.style.display = 'block')
+  }
+  viper.addEventListener('click', function () {
+    ;(viper.style.display = 'none') && (viperInp.style.display = 'none')
+  })
+}
+vipers()
+
+function walruss() {
+  w.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(walrus.style.display = 'block') && (walrusInp.style.display = 'block')
+  }
+  walrus.addEventListener('click', function () {
+    ;(walrus.style.display = 'none') && (walrusInp.style.display = 'none')
+  })
+}
+walruss()
+
+function xeruss() {
+  x.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(xerus.style.display = 'block') && (xerusInp.style.display = 'block')
+  }
+  xerus.addEventListener('click', function () {
+    ;(xerus.style.display = 'none') && (xerusInp.style.display = 'none')
+  })
+}
+xeruss()
+
+function yaks() {
+  y.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(yak.style.display = 'block') && (yakInp.style.display = 'block')
+  }
+  yak.addEventListener('click', function () {
+    ;(yak.style.display = 'none') && (yakInp.style.display = 'none')
+  })
+}
+yaks()
+
+function zebras() {
+  z.addEventListener('click', handleClick)
+  function handleClick() {
+    ;(zebra.style.display = 'block') && (zebraInp.style.display = 'block')
+  }
+  zebra.addEventListener('click', function () {
+    ;(zebra.style.display = 'none') && (zebraInp.style.display = 'none')
+  })
+}
+zebras()
 //
 //
 //
@@ -438,6 +526,70 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     if (quailInp.value === 'quail') {
       ;(quail.style.display = 'none') && (quailInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (rabbitInp.value === 'rabbit') {
+      ;(rabbit.style.display = 'none') && (rabbitInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (tigerInp.value === 'tiger') {
+      ;(tiger.style.display = 'none') && (tigerInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (unicornInp.value === 'unicorn') {
+      ;(unicorn.style.display = 'none') && (unicornInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (viperInp.value === 'viper') {
+      ;(viper.style.display = 'none') && (viperInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (walrusInp.value === 'walrus') {
+      ;(walrus.style.display = 'none') && (walrusInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (xerusInp.value === 'xerus') {
+      ;(xerus.style.display = 'none') && (xerusInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (yakInp.value === 'yak') {
+      ;(yak.style.display = 'none') && (yakInp.style.display = 'none')
+    }
+  }
+})
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    if (zebraInp.value === 'zebra') {
+      ;(zebra.style.display = 'none') && (zebraInp.style.display = 'none')
     }
   }
 })
