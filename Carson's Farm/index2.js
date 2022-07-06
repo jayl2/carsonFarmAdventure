@@ -84,512 +84,224 @@ const zebra = document.querySelector('#zebra')
 const zebraInp = document.querySelector('#z-text')
 
 //Sets directions div to display:none
+
+let gotClicked = false
+console.log(gotClicked)
+
 document.querySelector('#gotit').addEventListener('click', function () {
   dirBtn.style.display = 'none'
+  gotClicked = true
+
+  console.log(gotClicked)
 })
 
-function ants() {
-  a.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(ant.style.display = 'block') && (antInp.style.display = 'block')
-  }
-  ant.addEventListener('click', function () {
-    ;(ant.style.display = 'none') && (antInp.style.display = 'none')
-  })
-}
+// const allBut = document.querySelectorAll('.letBut')
+// console.log(allBut)
 
-ants()
+// for( let btn of allBut){
+//   btn.addEventListener('click',function(){
+//     btn.style.display = 'block'
+//   })
+// }
 
-//enable/disable bear image - click
-function bears() {
-  b.addEventListener('click', function () {
-    ;(bear.style.display = 'block') && (bearInp.style.display = 'block')
-  })
-  bear.addEventListener('click', function () {
-    ;(bear.style.display = 'none') && (bearInp.style.display = 'none')
-  })
-}
-
-bears()
-
-function cats() {
-  c.addEventListener('click', function () {
-    ;(cat.style.display = 'block') && (catInp.style.display = 'block')
-  })
-  document.querySelector('#cat').addEventListener('click', function () {
-    ;(this.style.display = 'none') && (catInp.style.display = 'none')
-  })
-}
-
-cats()
-
-const dogs = () => {
-  d.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(dog.style.display = 'block') && (dogInp.style.display = 'block')
-  }
-  dog.addEventListener('click', function () {
-    ;(dog.style.display = 'none') && (dogInp.style.display = 'none')
-  })
-}
-dogs()
-
-function eels() {
-  e.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(eel.style.display = 'block') && (eelInp.style.display = 'block')
-  }
-  eel.addEventListener('click', function () {
-    ;(eel.style.display = 'none') && (eelInp.style.display = 'none')
-  })
-}
-
-eels()
-
-function snakes() {
-  s.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(snake.style.display = 'block') && (snakeInp.style.display = 'block')
-  }
-  snake.addEventListener('click', function () {
-    ;(snake.style.display = 'none') && (snakeInp.style.display = 'none')
-  })
-}
-
-snakes()
-
-function fishes() {
-  f.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(fish.style.display = 'block') && (fishInp.style.display = 'block')
-  }
-  fish.addEventListener('click', function () {
-    ;(fish.style.display = 'none') && (fishInp.style.display = 'none')
-  })
-}
-fishes()
-
-function goats() {
-  g.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(goat.style.display = 'block') && (goatInp.style.display = 'block')
-  }
-  goat.addEventListener('click', function () {
-    ;(goat.style.display = 'none') && (goatInp.style.display = 'none')
-  })
-}
-goats()
-
-function horses() {
-  h.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(horse.style.display = 'block') && (horseInp.style.display = 'block')
-  }
-  horse.addEventListener('click', function () {
-    ;(horse.style.display = 'none') && (horseInp.style.display = 'none')
-  })
-}
-horses()
-
-function iguanas() {
-  i.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(iguana.style.display = 'block') && (iguanaInp.style.display = 'block')
-  }
-  iguana.addEventListener('click', function () {
-    ;(iguana.style.display = 'none') && (iguanaInp.style.display = 'none')
-  })
-}
-iguanas()
-
-function jaguars() {
-  j.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(jaguar.style.display = 'block') && (jaguarInp.style.display = 'block')
-  }
-  jaguar.addEventListener('click', function () {
-    ;(jaguar.style.display = 'none') && (jaguarInp.style.display = 'none')
-  })
-}
-jaguars()
-
-function koalas() {
-  k.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(koala.style.display = 'block') && (koalaInp.style.display = 'block')
-  }
-  koala.addEventListener('click', function () {
-    ;(koala.style.display = 'none') && (koalaInp.style.display = 'none')
-  })
-}
-koalas()
-
-function lions() {
-  l.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(lion.style.display = 'block') && (lionInp.style.display = 'block')
-  }
-  lion.addEventListener('click', function () {
-    ;(lion.style.display = 'none') && (lionInp.style.display = 'none')
-  })
-}
-lions()
-
-function monkeys() {
-  m.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(monkey.style.display = 'block') && (monkeyInp.style.display = 'block')
-  }
-  monkey.addEventListener('click', function () {
-    ;(monkey.style.display = 'none') && (monkeyInp.style.display = 'none')
-  })
-}
-monkeys()
-
-function newts() {
-  n.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(newt.style.display = 'block') && (newtInp.style.display = 'block')
-  }
-  newt.addEventListener('click', function () {
-    ;(newt.style.display = 'none') && (newtInp.style.display = 'none')
-  })
-}
-newts()
-
-function octopuses() {
-  o.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(octopus.style.display = 'block') && (octopusInp.style.display = 'block')
-  }
-  octopus.addEventListener('click', function () {
-    ;(octopus.style.display = 'none') && (octopusInp.style.display = 'none')
-  })
-}
-octopuses()
-
-function panthers() {
-  p.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(panther.style.display = 'block') && (pantherInp.style.display = 'block')
-  }
-  panther.addEventListener('click', function () {
-    ;(panther.style.display = 'none') && (pantherInp.style.display = 'none')
-  })
-}
-panthers()
-
-function quails() {
-  q.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(quail.style.display = 'block') && (quailInp.style.display = 'block')
-  }
-  quail.addEventListener('click', function () {
-    ;(quail.style.display = 'none') && (quailInp.style.display = 'none')
-  })
-}
-quails()
-
-function rabbits() {
-  r.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(rabbit.style.display = 'block') && (rabbitInp.style.display = 'block')
-  }
-  rabbit.addEventListener('click', function () {
-    ;(rabbit.style.display = 'none') && (rabbitInp.style.display = 'none')
-  })
-}
-rabbits()
-
-function tigers() {
-  t.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(tiger.style.display = 'block') && (tigerInp.style.display = 'block')
-  }
-  tiger.addEventListener('click', function () {
-    ;(tiger.style.display = 'none') && (tigerInp.style.display = 'none')
-  })
-}
-tigers()
-
-function unicorns() {
-  u.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(unicorn.style.display = 'block') && (unicornInp.style.display = 'block')
-  }
-  unicorn.addEventListener('click', function () {
-    ;(unicorn.style.display = 'none') && (unicornInp.style.display = 'none')
-  })
-}
-unicorns()
-
-function vipers() {
-  v.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(viper.style.display = 'block') && (viperInp.style.display = 'block')
-  }
-  viper.addEventListener('click', function () {
-    ;(viper.style.display = 'none') && (viperInp.style.display = 'none')
-  })
-}
-vipers()
-
-function walruss() {
-  w.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(walrus.style.display = 'block') && (walrusInp.style.display = 'block')
-  }
-  walrus.addEventListener('click', function () {
-    ;(walrus.style.display = 'none') && (walrusInp.style.display = 'none')
-  })
-}
-walruss()
-
-function xeruss() {
-  x.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(xerus.style.display = 'block') && (xerusInp.style.display = 'block')
-  }
-  xerus.addEventListener('click', function () {
-    ;(xerus.style.display = 'none') && (xerusInp.style.display = 'none')
-  })
-}
-xeruss()
-
-function yaks() {
-  y.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(yak.style.display = 'block') && (yakInp.style.display = 'block')
-  }
-  yak.addEventListener('click', function () {
-    ;(yak.style.display = 'none') && (yakInp.style.display = 'none')
-  })
-}
-yaks()
-
-function zebras() {
-  z.addEventListener('click', handleClick)
-  function handleClick() {
-    ;(zebra.style.display = 'block') && (zebraInp.style.display = 'block')
-  }
-  zebra.addEventListener('click', function () {
-    ;(zebra.style.display = 'none') && (zebraInp.style.display = 'none')
-  })
-}
-zebras()
+//TODO: remove && and make those 2 lines.
+//       rename ants() to initAnts() or something to that effect.
 //
-//
-//
-//
-//
-//-----------------------KeyPress Listeners------------------------------
-// answer correct to hide ant
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (antInp.value === 'ant') {
-      ;(ant.style.display = 'none') && (antInp.style.display = 'none')
-    }
-  }
-})
-// answer correct to hide bear
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (bearInp.value === 'bear') {
-      ;(bear.style.display = 'none') && (bearInp.style.display = 'none')
-    }
-  }
-})
+let boxClicked = ''
 
-// answer correct to hide cat
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (catInp.value === 'cat') {
-      ;(cat.style.display = 'none') && (catInp.style.display = 'none')
+//----------------------------------------
+function animalClick(evtLis, anipic, aniInput) {
+  evtLis.addEventListener('click', handleClick)
+  function handleClick() {
+    if (gotClicked == true && boxClicked == '') {
+      anipic.style.display = 'block'
+      aniInput.style.display = 'block'
+      boxClicked = anipic.id
+      console.log('aniId = ' + anipic.id)
     }
   }
-})
+  anipic.addEventListener('click', function () {
+    if ((boxClicked = anipic.id)) {
+      anipic.style.display = 'none'
+      aniInput.style.display = 'none'
+      boxClicked = ''
+    }
+  })
+}
+animalClick(a, ant, antInp)
+animalClick(b, bear, bearInp)
+animalClick(c, cat, catInp)
+animalClick(d, dog, dogInp)
+animalClick(e, eel, eelInp)
+animalClick(f, fish, fishInp)
+animalClick(g, goat, goatInp)
+animalClick(h, horse, horseInp)
+animalClick(i, iguana, iguanaInp)
+animalClick(j, jaguar, jaguarInp)
+animalClick(k, koala, koalaInp)
+animalClick(l, lion, lionInp)
+animalClick(m, monkey, monkeyInp)
+animalClick(n, newt, newtInp)
+animalClick(o, octopus, octopusInp)
+animalClick(p, panther, pantherInp)
+animalClick(q, quail, quailInp)
+animalClick(r, rabbit, rabbitInp)
+animalClick(s, snake, snakeInp)
+animalClick(t, tiger, tigerInp)
+animalClick(u, unicorn, unicornInp)
+animalClick(v, viper, viperInp)
+animalClick(w, walrus, walrusInp)
+animalClick(x, xerus, xerusInp)
+animalClick(y, yak, yakInp)
+animalClick(z, zebra, zebraInp) /
+  //
+  //
+  //
+  //
+  //
+  //-----------------------KeyPress Listeners------------------------------
+  // answer correct to hide ant
 
-// answer correct to hide dog
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (dogInp.value === 'dog') {
-      score++
-      console.log(score)
-      ;(dog.style.display = 'none') && (dogInp.style.display = 'none')
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      if (antInp.value === 'ant') {
+        ant.style.display = 'none'
+        antInp.style.display = 'none'
+        boxClicked = ''
+        antInp.value = ''
+      }
+      if (bearInp.value === 'bear') {
+        bear.style.display = 'none'
+        bearInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (catInp.value === 'cat') {
+        cat.style.display = 'none'
+        catInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (dogInp.value === 'dog') {
+        dog.style.display = 'none'
+        dogInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (eelInp.value === 'eel') {
+        eel.style.display = 'none'
+        eelInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (snakeInp.value === 'snake') {
+        snake.style.display = 'none'
+        snakeInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (fishInp.value === 'fish') {
+        fish.style.display = 'none'
+        fishInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (goatInp.value === 'goat') {
+        goat.style.display = 'none'
+        goatInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (horseInp.value === 'horse') {
+        horse.style.display = 'none'
+        horseInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (iguanaInp.value === 'iguana') {
+        iguana.style.display = 'none'
+        iguanaInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (jaguarInp.value === 'jaguar') {
+        jaguar.style.display = 'none'
+        jaguarInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (koalaInp.value === 'koala') {
+        koala.style.display = 'none'
+        koalaInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (lionInp.value === 'lion') {
+        lion.style.display = 'none'
+        lionInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (monkeyInp.value === 'monkey') {
+        monkey.style.display = 'none'
+        monkeyInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (newtInp.value === 'newt') {
+        newt.style.display = 'none'
+        newtInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (octopusInp.value === 'octopus') {
+        octopus.style.display = 'none'
+        octopusInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (pantherInp.value === 'panther') {
+        panther.style.display = 'none'
+        pantherInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (quailInp.value === 'quail') {
+        quail.style.display = 'none'
+        quailInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (rabbitInp.value === 'rabbit') {
+        rabbit.style.display = 'none'
+        rabbitInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (tigerInp.value === 'tiger') {
+        tiger.style.display = 'none'
+        tigerInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (unicornInp.value === 'unicorn') {
+        unicorn.style.display = 'none'
+        unicornInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (viperInp.value === 'viper') {
+        viper.style.display = 'none'
+        viperInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (walrusInp.value === 'walrus') {
+        walrus.style.display = 'none'
+        walrusInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (xerusInp.value === 'xerus') {
+        xerus.style.display = 'none'
+        xerusInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (yakInp.value === 'yak') {
+        yak.style.display = 'none'
+        yakInp.style.display = 'none'
+        boxClicked = ''
+      }
+      if (zebraInp.value === 'zebra') {
+        zebra.style.display = 'none'
+        zebraInp.style.display = 'none'
+        boxClicked = ''
+      }
     }
-  }
-})
+  })
 
-// answer correct to hide eel and snake
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (eelInp.value === 'eel') {
-      ;(eel.style.display = 'none') && (eelInp.style.display = 'none')
-    } else if (snakeInp.value === 'snake') {
-      ;(snake.style.display = 'none') && (snakeInp.style.display = 'none')
-    }
-  }
-})
+//-----------------Sounds-------------------
+let playSound = function () {
+  audio.play()
+}
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (fishInp.value === 'fish') {
-      score++
-      console.log(score)
-      ;(fish.style.display = 'none') && (fishInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (goatInp.value === 'goat') {
-      ;(goat.style.display = 'none') && (goatInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (horseInp.value === 'horse') {
-      ;(horse.style.display = 'none') && (horseInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (iguanaInp.value === 'iguana') {
-      ;(iguana.style.display = 'none') && (iguanaInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (jaguarInp.value === 'jaguar') {
-      ;(jaguar.style.display = 'none') && (jaguarInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (koalaInp.value === 'koala') {
-      ;(koala.style.display = 'none') && (koalaInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (lionInp.value === 'lion') {
-      ;(lion.style.display = 'none') && (lionInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (monkeyInp.value === 'monkey') {
-      ;(monkey.style.display = 'none') && (monkeyInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (newtInp.value === 'newt') {
-      ;(newt.style.display = 'none') && (newtInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (octopusInp.value === 'octopus') {
-      ;(octopus.style.display = 'none') && (octopusInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (pantherInp.value === 'panther') {
-      ;(panther.style.display = 'none') && (pantherInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (quailInp.value === 'quail') {
-      ;(quail.style.display = 'none') && (quailInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (rabbitInp.value === 'rabbit') {
-      ;(rabbit.style.display = 'none') && (rabbitInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (tigerInp.value === 'tiger') {
-      ;(tiger.style.display = 'none') && (tigerInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (unicornInp.value === 'unicorn') {
-      ;(unicorn.style.display = 'none') && (unicornInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (viperInp.value === 'viper') {
-      ;(viper.style.display = 'none') && (viperInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (walrusInp.value === 'walrus') {
-      ;(walrus.style.display = 'none') && (walrusInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (xerusInp.value === 'xerus') {
-      ;(xerus.style.display = 'none') && (xerusInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (yakInp.value === 'yak') {
-      ;(yak.style.display = 'none') && (yakInp.style.display = 'none')
-    }
-  }
-})
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    if (zebraInp.value === 'zebra') {
-      ;(zebra.style.display = 'none') && (zebraInp.style.display = 'none')
-    }
-  }
-})
+document.getElementById('play').addEventListener('click', playSound, false)
