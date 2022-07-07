@@ -9,3 +9,10 @@
 document.querySelector('.start').addEventListener('click', function () {
   window.open('index2.html', '_self')
 })
+
+//music//
+// let musc = new Audio('start.wav')
+//
+// // musicBtn = add.addEventListener('click', (e) => musicBtn.play())
+//
+// window.addEventListener("load", musc.play())

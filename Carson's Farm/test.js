@@ -1,16 +1,16 @@
-function animalClick(evtLis, anipic, aniInput) {
-  evtLis.addEventListener('click', handleClick)
-  function handleClick() {
-    anipic.style.display = 'block'
-    aniInput.style.display = 'block'
-  }
-  anipic.addEventListener('click', function () {
-    anipic.style.display = 'none'
-    aniInupt.style.display = 'none'
-  })
-}
+// function animalClick(evtLis, anipic, aniInput) {
+//   evtLis.addEventListener('click', handleClick)
+//   function handleClick() {
+//     anipic.style.display = 'block'
+//     aniInput.style.display = 'block'
+//   }
+//   anipic.addEventListener('click', function () {
+//     anipic.style.display = 'none'
+//     aniInupt.style.display = 'none'
+//   })
+// }
 
-amimalClick(g, goat, goatInp)
+// amimalClick(g, goat, goatInp)
 
 // function goats() {
 //   g.addEventListener('click', handleClick)
@@ -75,3 +75,8 @@ amimalClick(g, goat, goatInp)
 // }
 
 // bears()
+
+// function reset() {
+//   for (let i = 0; i < letBut.length; i++) {
+//     document.querySelectorAll('.letBut')[i].style.display = 'flex'
+//   }

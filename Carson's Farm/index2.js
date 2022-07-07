@@ -1,4 +1,6 @@
 let score = 0
+let boxClicked = ''
+const ltrBtn = document.querySelectorAll('.letBut')
 //QuerySelectors-------------------
 
 //Button Targets//
@@ -83,34 +85,29 @@ const yakInp = document.querySelector('#y-text')
 const zebra = document.querySelector('#zebra')
 const zebraInp = document.querySelector('#z-text')
 
-//Sets directions div to display:none
+//all letters/buttons
+const allBtns = document.querySelectorAll('.letBut')
 
+// click tracker
 let gotClicked = false
 console.log(gotClicked)
 
+//Pop up box with tracker to disable other buttons
 document.querySelector('#gotit').addEventListener('click', function () {
   dirBtn.style.display = 'none'
   gotClicked = true
 
-  console.log(gotClicked)
+  console.log('got clicked' + gotClicked)
 })
 
-// const allBut = document.querySelectorAll('.letBut')
-// console.log(allBut)
-
-// for( let btn of allBut){
-//   btn.addEventListener('click',function(){
-//     btn.style.display = 'block'
-//   })
+// winning condition//
+// function win() {
+//   for (let i = 0; i < allBtns.length; i++) {
+//     document.querySelectorAll('.letBut')[i].style.display = 'none'
+//   }
 // }
 
-//TODO: remove && and make those 2 lines.
-//       rename ants() to initAnts() or something to that effect.
-//
-
-let boxClicked = ''
-
-//----------------------------------------
+//--------------------method to initiate animal clicks with tracker.
 function animalClick(evtLis, anipic, aniInput) {
   evtLis.addEventListener('click', handleClick)
   function handleClick() {
@@ -121,8 +118,10 @@ function animalClick(evtLis, anipic, aniInput) {
       console.log('aniId = ' + anipic.id)
     }
   }
+  //toggles tracker off while box clicked to hide image.
   anipic.addEventListener('click', function () {
     if ((boxClicked = anipic.id)) {
+      console.log('anicliked' + boxClicked)
       anipic.style.display = 'none'
       aniInput.style.display = 'none'
       boxClicked = ''
@@ -154,154 +153,117 @@ animalClick(v, viper, viperInp)
 animalClick(w, walrus, walrusInp)
 animalClick(x, xerus, xerusInp)
 animalClick(y, yak, yakInp)
-animalClick(z, zebra, zebraInp) /
-  //
-  //
-  //
-  //
-  //
-  //-----------------------KeyPress Listeners------------------------------
-  // answer correct to hide ant
+animalClick(z, zebra, zebraInp)
 
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') {
-      if (antInp.value === 'ant') {
-        ant.style.display = 'none'
-        antInp.style.display = 'none'
-        boxClicked = ''
-        antInp.value = ''
-      }
-      if (bearInp.value === 'bear') {
-        bear.style.display = 'none'
-        bearInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (catInp.value === 'cat') {
-        cat.style.display = 'none'
-        catInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (dogInp.value === 'dog') {
-        dog.style.display = 'none'
-        dogInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (eelInp.value === 'eel') {
-        eel.style.display = 'none'
-        eelInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (snakeInp.value === 'snake') {
-        snake.style.display = 'none'
-        snakeInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (fishInp.value === 'fish') {
-        fish.style.display = 'none'
-        fishInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (goatInp.value === 'goat') {
-        goat.style.display = 'none'
-        goatInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (horseInp.value === 'horse') {
-        horse.style.display = 'none'
-        horseInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (iguanaInp.value === 'iguana') {
-        iguana.style.display = 'none'
-        iguanaInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (jaguarInp.value === 'jaguar') {
-        jaguar.style.display = 'none'
-        jaguarInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (koalaInp.value === 'koala') {
-        koala.style.display = 'none'
-        koalaInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (lionInp.value === 'lion') {
-        lion.style.display = 'none'
-        lionInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (monkeyInp.value === 'monkey') {
-        monkey.style.display = 'none'
-        monkeyInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (newtInp.value === 'newt') {
-        newt.style.display = 'none'
-        newtInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (octopusInp.value === 'octopus') {
-        octopus.style.display = 'none'
-        octopusInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (pantherInp.value === 'panther') {
-        panther.style.display = 'none'
-        pantherInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (quailInp.value === 'quail') {
-        quail.style.display = 'none'
-        quailInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (rabbitInp.value === 'rabbit') {
-        rabbit.style.display = 'none'
-        rabbitInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (tigerInp.value === 'tiger') {
-        tiger.style.display = 'none'
-        tigerInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (unicornInp.value === 'unicorn') {
-        unicorn.style.display = 'none'
-        unicornInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (viperInp.value === 'viper') {
-        viper.style.display = 'none'
-        viperInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (walrusInp.value === 'walrus') {
-        walrus.style.display = 'none'
-        walrusInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (xerusInp.value === 'xerus') {
-        xerus.style.display = 'none'
-        xerusInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (yakInp.value === 'yak') {
-        yak.style.display = 'none'
-        yakInp.style.display = 'none'
-        boxClicked = ''
-      }
-      if (zebraInp.value === 'zebra') {
-        zebra.style.display = 'none'
-        zebraInp.style.display = 'none'
-        boxClicked = ''
-      }
-    }
-  })
+//
+//-----------------------KeyPress Listeners------------------------------
+// answer correct =  hide image
 
-//-----------------Sounds-------------------
-let playSound = function () {
-  audio.play()
+function rmvBox(txtInpt, animal, letter) {
+  animal.style.display = 'none'
+  txtInpt.style.display = 'none'
+  boxClicked = ''
+  animal.value = ''
+  letter.style.display = 'none'
+  console.log(antInp.value.toLowerCase())
+  score++
+  txtInpt.value = '' // <----
+  console.log('Score = ' + score)
 }
 
-document.getElementById('play').addEventListener('click', playSound, false)
+///if score != score?
+// where to put?
+//function / EVLST?
+
+function catClick() {}
+
+document.addEventListener('keydown', function (eve) {
+  if (boxClicked != '') {
+    if (eve.key === 'Enter') {
+      if (antInp.value.toLowerCase() === 'ant') {
+        /////////////////^^^^^^
+        rmvBox(antInp, ant, a)
+      }
+      if (bearInp.value.toLowerCase() === 'bear') {
+        rmvBox(bearInp, bear, b)
+      }
+      if (catInp.value.toLowerCase() === 'cat') {
+        rmvBox(catInp, cat, c)
+      }
+      if (dogInp.value.toLowerCase() === 'dog') {
+        rmvBox(dogInp, dog, d)
+      }
+      if (eelInp.value.toLowerCase() === 'eel') {
+        rmvBox(eelInp, eel, e)
+      }
+      if (snakeInp.value.toLowerCase() === 'snake') {
+        rmvBox(snakeInp, snake, s)
+      }
+      if (fishInp.value.toLowerCase() === 'fish') {
+        rmvBox(fishInp, fish, f)
+      }
+      if (goatInp.value.toLowerCase() === 'goat') {
+        rmvBox(goatInp, goat, g)
+      }
+      if (horseInp.value.toLowerCase() === 'horse') {
+        rmvBox(horseInp, horse, h)
+      }
+      if (iguanaInp.value.toLowerCase() === 'iguana') {
+        rmvBox(iguanaInp, iguana, i)
+      }
+      if (jaguarInp.value.toLowerCase() === 'jaguar') {
+        rmvBox(jaguarInp, jaguar, j)
+      }
+      if (koalaInp.value.toLowerCase() === 'koala') {
+        rmvBox(koalaInp, koala, k)
+      }
+      if (lionInp.value.toLowerCase() === 'lion') {
+        rmvBox(lionInp, lion, l)
+      }
+      if (monkeyInp.value.toLowerCase() === 'monkey') {
+        rmvBox(monkeyInp, monkey, m)
+      }
+      if (newtInp.value.toLowerCase() === 'newt') {
+        rmvBox(newtInp, newt, n)
+      }
+      if (octopusInp.value.toLowerCase() === 'octopus') {
+        rmvBox(octopusInp, octopus, o)
+      }
+      if (pantherInp.value.toLowerCase() === 'panther') {
+        rmvBox(pantherInp, panther, p)
+      }
+      if (quailInp.value.toLowerCase() === 'quail') {
+        rmvBox(quailInp, quail, q)
+      }
+      if (rabbitInp.value.toLowerCase() === 'rabbit') {
+        rmvBox(rabbitInp, rabbit, r)
+      }
+      if (tigerInp.value.toLowerCase() === 'tiger') {
+        rmvBox(tigerInp, tiger, t)
+      }
+      if (unicornInp.value.toLowerCase() === 'unicorn') {
+        rmvBox(unicornInp, unicorn, u)
+      }
+      if (viperInp.value.toLowerCase() === 'viper') {
+        rmvBox(viperInp, viper, v)
+      }
+      if (walrusInp.value.toLowerCase() === 'walrus') {
+        rmvBox(walrusInp, walrus, w)
+      }
+      if (xerusInp.value.toLowerCase() === 'xerus') {
+        rmvBox(xerusInp, xerus, x)
+      }
+      if (yakInp.value.toLowerCase() === 'yak') {
+        rmvBox(yakInp, yak, y)
+      }
+      if (zebraInp.value.toLowerCase() === 'zebra') {
+        rmvBox(zebraInp, zebra, z)
+      }
+    }
+    if (score >= 26) {
+      alert('You Win!')
+    }
+  }
+})
+
+//-----------------Sounds-------------------

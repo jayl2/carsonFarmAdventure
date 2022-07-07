@@ -30,6 +30,7 @@
 }
 
 body{
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/farm2.jpeg');
     background-repeat: no-repeat;
     background-size:cover ;
@@ -68,10 +69,6 @@ button{
     border-width: 5px;
     border-radius: 10%;
 
-
-    
-
-
     /* ------ */
     /* @keyframes tilt-shaking {
         0% { transform: rotate(0deg); }
@@ -107,6 +104,12 @@ button:hover{
     justify-content:space-around;
     row-gap: 90px;
     column-gap: 100px;
+}
+
+.letBut{
+    width: 10%;
+    text-align: center;
+    
 }
 
 
@@ -155,7 +158,6 @@ height: 400px;
     font-family: 'titan one';
     font-size: 2rem;
     color: white;
-    
 }
 
 #ant, #a-text, #b-text, #c-text, 
@@ -164,7 +166,6 @@ height: 400px;
 #u-text,#v-text,#w-text,#x-text,#y-text,#z-text{
     display:none;
 }
-
 
 #bear{
     display:none;
@@ -189,6 +190,103 @@ height: 400px;
 }
 
 
+@keyframes spaceboot {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% {transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+    .shakes:hover {
+        animation-name: spaceboot;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .shake {
+        animation-name: spaceboot;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+
+      /* ---------------------------------------------media Q------------------------------------------------------ */
+@media screen and (max-width: 550px){
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('images/farm2.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover ;
+        margin: 10%;
+    }
+    
+
+.title{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Titan One';
+    margin-top:0;
+    margin-bottom: 5px;
+    }
+
+button{
+    font-size: 1.5rem;
+    }
+
+.letter-buttons{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+
+.animal{
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    width: 40%;
+    bottom: 50%;
+    border: solid rgb(39, 69, 39);
+    border-width: 10px;
+    border-radius: 30%;
+    height: 250px;
+    }
+
+.inputStyle{
+    width: 60%;
+    height: 50px;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    margin-left:auto;
+    margin-right: auto;
+    position:absolute;
+    background-color: darkseagreen;
+    border: solid darkslategray;
+    border-width: 5px;
+    text-align:center;
+    font-family: 'titan one';
+    font-size: 1.25rem;
+    color: white;
+    }
 
 
 @-webkit-keyframes spaceboot {
@@ -206,11 +304,13 @@ height: 400px;
 }
 
     .shakes:hover {
-        -webkit-animation-name: spaceboot;
-        -webkit-animation-duration: 0.8s;
-        -webkit-transform-origin: 50% 50%;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-      }
+        animation-name: spaceboot;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      } 
 
-  
+
+}
+    
