@@ -1,6 +1,7 @@
 let score = 0
 let boxClicked = ''
 const ltrBtn = document.querySelectorAll('.letBut')
+let music = new Audio('./Carefree.mp3')
 //QuerySelectors-------------------
 
 //Button Targets//
@@ -96,7 +97,7 @@ console.log(gotClicked)
 document.querySelector('#gotit').addEventListener('click', function () {
   dirBtn.style.display = 'none'
   gotClicked = true
-
+  music.play()
   console.log('got clicked' + gotClicked)
 })
 
@@ -261,9 +262,12 @@ document.addEventListener('keydown', function (eve) {
       }
     }
     if (score >= 26) {
-      alert('You Win!')
+      document.querySelector('.reset').style.display = 'block'
     }
   }
 })
 
+document.querySelector('.reset').addEventListener('click', function () {
+  window.open('index2.html', '_self')
+})
 //-----------------Sounds-------------------
